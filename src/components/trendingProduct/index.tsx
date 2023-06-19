@@ -136,7 +136,7 @@ const TrendingProducts = () => {
           </div>
         </div>
       </div>
-      <div className="flex scroll-smooth overflow-hidden gap-5 mt-5 p-0 w-[100vw] product-container">
+      <div className="flex scroll-smooth overflow-hidden gap-5 mt-5 p-0 w-[100%] product-container">
         {category.map((data, key: number) => {
           return <ProductCategory image={data.image} name={data.name} price={data.price} status={data.status} key={key} background={data.background} shadow={data.shadow} />;
         })}
