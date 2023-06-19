@@ -10,7 +10,7 @@ const Brands = () => {
     { image: "/brands/adi.svg" },
   ];
   return (
-    <div className="flex flex-row items-center justify-center gap-10 p-20 bg-[#F4FCFF]">
+    <div className="flex flex-row items-center justify-center gap-10 p-20 mt-10 bg-[#F4FCFF]">
       <div className="w-[37%] h-[600px] bg-[url('/brands/Vector.svg')] bg-no-repeat flex flex-row flex-wrap items-center justify-center relative">
         <div className="bg-[#D6C5FF] w-[400px] h-[400px] blur-none opacity-40 rounded-2xl absolute" />
         <div className="flex flex-row flex-wrap items-center justify-center gap-10 z-30">
