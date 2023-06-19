@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ShopByCategory, TrendingProducts } from "@/components";
+import { FeaturedProducts, ShopByCategory, TrendingProducts } from "@/components";
 import { getProducts } from "@/services/products.service";
 
 async function getData() {
@@ -18,6 +18,7 @@ const Home = async () => {
       <h1>Home page</h1>
       <TrendingProducts />
       <ShopByCategory products={data.products} />
+      <FeaturedProducts />
     </main>
   );
 };
