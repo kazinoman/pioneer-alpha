@@ -1,7 +1,10 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import ProductCategory from "./singleCategoryCard";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const TrendingProducts = () => {
+  const [buttonSelect, setbuttonSelect] = useState<string>("");
   const category = [
     {
       name: "Seven Zero Five",
@@ -92,6 +95,22 @@ const TrendingProducts = () => {
       shadow: "15px 2px 40px -20px rgba(40, 48, 40, 0.4)",
     },
   ];
+  let box = document.querySelector(".product-container");
+  const buttonPressPrev = () => {
+    if (box) {
+      let width = box.clientWidth;
+      box.scrollLeft = box.scrollLeft - width;
+    }
+    setbuttonSelect("prev");
+  };
+  const buttonPressNext = () => {
+    // let box = document.getElementById(".product-container");
+    if (box) {
+      let width = box.clientWidth;
+      box.scrollLeft = box.scrollLeft + width;
+    }
+    setbuttonSelect("next");
+  };
 
   return (
     <div>
@@ -108,12 +127,16 @@ const TrendingProducts = () => {
             <Heading text="Food & Drinks" />
           </div>
           <div className="absolute right-0 flex flex-row">
-            <h1>icon 1</h1>
-            <h1>icon 2</h1>
+            <button className={`p-1 rounded-2xl border-solid border-black border-2 mr-3 ${buttonSelect === "prev" ? `bg-black ` : ``}`} onClick={buttonPressPrev}>
+              <IoIosArrowBack className={` ${buttonSelect === "prev" ? `text-white border-solid border-black border-2` : null}`} />
+            </button>
+            <button className={`p-1 rounded-2xl border-solid border-black border-2 ${buttonSelect === "next" ? `bg-black ` : ``}`} onClick={buttonPressNext}>
+              <IoIosArrowForward className={`${buttonSelect === "next" ? `text-white border-solid border-black border-2` : null}`} />
+            </button>
           </div>
         </div>
       </div>
-      <div className="flex scroll-smooth overflow-hidden gap-5 mt-5 p-0 w-[100vw]">
+      <div className="flex scroll-smooth overflow-hidden gap-5 mt-5 p-0 w-[100vw] product-container">
         {category.map((data, key: number) => {
           return <ProductCategory image={data.image} name={data.name} price={data.price} status={data.status} key={key} background={data.background} shadow={data.shadow} />;
         })}
