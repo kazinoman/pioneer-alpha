@@ -1,6 +1,7 @@
 import Image from "next/image";
 import {
   Brands,
+  Comments,
   FeaturedProducts,
   ShopByCategory,
   SocialMediaComponent,
@@ -26,6 +27,7 @@ const Home = async () => {
       <FeaturedProducts />
       <Brands />
       <SocialMediaComponent />
+      <Comments />
     </main>
   );
 };
