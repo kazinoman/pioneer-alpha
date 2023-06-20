@@ -25,11 +25,11 @@ const Header = () => {
         <div className="flex flex-row items-center gap-5">
           <div className="flex flex-row items-center gap-2">
             <IoPersonOutline />
-            <h1 className="font-normal text-sm">Account</h1>
+            <h1 className="font-normal text-sm font-roboto">Account</h1>
           </div>
           <div className="flex flex-row items-center gap-2">
             <AiOutlineHeart />
-            <h1 className="font-normal text-sm">My Items</h1>
+            <h1 className="font-normal text-sm font-roboto">My Items</h1>
           </div>
           <div>
             <Badge badgeContent={4} color="warning">

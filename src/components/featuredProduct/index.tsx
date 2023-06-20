@@ -31,7 +31,7 @@ const FeaturedProducts = () => {
       <div className="max-w-5xl mx-auto">
         <div className=" mt-10 relative text-center flex flex-row gap-5 items-center justify-center">
           <div className=" text-center flex flex-row gap-5 items-center justify-center">
-            <h1 className="text-xl font-bold">
+            <h1 className="text-3xl font-bold font-spectral">
               Featured Product For <br /> Pre-Order
             </h1>
           </div>
@@ -54,8 +54,8 @@ const FeaturedProducts = () => {
             <div className="flex flex-col items-center gap-10">
               <div className="h-[450px] w-[400px] border-2 rounded-2xl shadow-md">
                 <img src={data.image} className="h-[400px] w-[500px] mt-[-90px] rounded-lg" />
-                <div className="flex flex-col items-center justify-around gap-5 ">
-                  <h1 className="font-bold text-xl">{data.name}</h1>
+                <div className="flex flex-col items-center justify-around gap-5 font-poppins">
+                  <h1 className="font-bold text-xl ">{data.name}</h1>
                   <h1 className="font-bold text-md">
                     {data.description} <span className="font-normal text-md">{data.gender}</span>
                   </h1>

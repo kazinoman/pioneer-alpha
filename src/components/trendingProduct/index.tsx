@@ -115,12 +115,14 @@ const TrendingProducts = () => {
   return (
     <div className="mt-20">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-3xl text-center font-semibold">Shop out trending products</h1>
-        <h1 className="text-md text-center mt-5">
+        <h1 className="text-3xl text-center font-semibold  font-spectral">
+          Shop out trending products
+        </h1>
+        <h1 className="text-md text-center mt-5 font-poppins">
           Life is hard enough already. Let us make it a <br /> little easier.
         </h1>
         <div className=" mt-10 relative text-center flex flex-row gap-5 items-center justify-center">
-          <div className=" text-center flex flex-row gap-5 items-center justify-center">
+          <div className=" text-center flex flex-row gap-5 items-center justify-center font-poppins">
             <Heading text="Fashion" classes="underline" />
             <Heading text="Technology" />
             <Heading text="Interiors" />

@@ -6,7 +6,7 @@ const HeroSection = () => {
     <div className="h-[100vh] bg-[url('/hero/background.png'),url('/hero/base.svg')] opacity-90 bg-cover bg-center bg-no-repeat relative">
       {/* heading */}
 
-      <div className=" max-w-7xl mx-auto flex flex-row items-center justify-between gap-5 pt-2 ">
+      <div className=" max-w-7xl mx-auto flex flex-row items-center justify-between gap-5 pt-2 font-roboto">
         <h1 className="text-[#5F5F5F] text-sm font-light">Jewelry & Accessories</h1>
         <h1 className="text-[#5F5F5F] text-sm font-light border-b-2 border-black ">
           Clothing & Shoes
@@ -20,25 +20,23 @@ const HeroSection = () => {
       </div>
       <div className="max-w-7xl mx-auto flex flex-row items-center justify-between">
         <div className="flex flex-col gap-9 mt-16">
-          <h1 className="font-normal text-sm font-['Spectral']">
-            100% QUALITY, 100% SATISFACTION{" "}
-          </h1>
-          <h1 className="font-extrabold text-7xl leading-[5rem] spectral">
+          <h1 className="font-normal text-sm  font-spectral">100% QUALITY, 100% SATISFACTION </h1>
+          <h1 className="font-extrabold text-7xl leading-[5rem]  font-spectral ">
             Where the world <br /> comes to shop.
           </h1>
-          <h1 className="font-normal text-2xl text-[#000002] font-['Poppins']">
+          <h1 className="font-normal text-xl text-[#000002] font-poppins">
             Life is hard enough already. Let us make it a little <br /> easier, Vision of Snipshop
             for a better outlook.
           </h1>
           <div className="flex flex-row items-end justify-between">
             <button className="bg-[#2B2B2B] rounded-3xl px-6 py-2 text-white">shop now</button>
-            <h1 className="font-normal text-[#262626]">
+            <h1 className="font-normal text-[#262626] font-poppins">
               start from <br />
               <span className="font-bold text-xl text-black">110.00$</span>
             </h1>
           </div>
         </div>
-        <div className="flex flex-col gap-5 items-center">
+        <div className="flex flex-col gap-5 items-center font-poppins">
           <img src={"/hero/cam2.png"} className="h-[100px] w-[100px]" />
           <h1>
             Fuji 14mm <br /> Lens

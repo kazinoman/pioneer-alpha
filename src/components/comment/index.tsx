@@ -10,11 +10,11 @@ const Comments = () => {
         </div>
       </div>
       <div className="w-[50%] flex flex-col items-start justify-center gap-10">
-        <div className=" flex flex-col items-start justify-center gap-3">
-          <h1 className="font-bold">Justin Pierre</h1>
-          <p className="font-normal text-sm">Products Seller</p>
+        <div className=" flex flex-col items-start justify-center gap-3 font-poppins">
+          <h1 className="font-bold ">Justin Pierre</h1>
+          <p className="font-normal text-sm ">Products Seller</p>
         </div>
-        <h1 className="font-medium text-lg w-[30rem]">
+        <h1 className="font-medium text-lg w-[30rem] italic font-poppins">
           “In 2 years, my business went from just me and my Shop site to 40 employees, my own
           fulfillment center and over 22 million dollars in revenue.”
         </h1>

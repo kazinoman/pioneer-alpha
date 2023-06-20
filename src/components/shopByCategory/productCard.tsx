@@ -11,11 +11,15 @@ type ProductProps = {
 
 const ProductCard: React.FC<ProductProps> = ({ price, name, image, discountPrice }) => {
   return (
-    <div className="w-[300px] p-5 flex flex-col items-center border-[1.5px]  rounded-3xl shadow-sm hover:shadow-md ease-in duration-300">
+    <div className="w-[300px] p-5 flex flex-col items-center border-[1.5px]  rounded-3xl shadow-sm hover:shadow-md ease-in duration-300 font-poppins">
       <div className="flex flex-col items-start gap-3 w-full">
         <div className="flex flex-col items-start gap-5 w-full">
-          <img src={image ? image : ""} className="w-[100%] h-[150px] rounded-2xl self-center" alt="adsf" />
-          <h1 className="font-medium text-lg">{name}</h1>
+          <img
+            src={image ? image : ""}
+            className="w-[100%] h-[150px] rounded-2xl self-center"
+            alt="adsf"
+          />
+          <h1 className="font-[500] text-md font-poppins">{name}</h1>
         </div>
         <div className="flex flex-row items-end justify-between w-full">
           <div className="flex flex-row gap-3 items-end">

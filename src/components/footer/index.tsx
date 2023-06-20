@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className=" text-white ">
       <div className="h-[20rem] bg-[#0E4B80] text-white p-10 mt-20 bg-[url('/footer/Vector.svg')] bg-center bg-no-repeat">
-        <div className="max-w-5xl mx-auto flex flex-row gap-10">
+        <div className="max-w-5xl mx-auto flex flex-row gap-10 font-poppins">
           <div className="w-[25%]  flex flex-col gap-5">
             <h1 className="font-bold text-lg">Shop</h1>
             <div className="flex flex-col gap-2">
@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="h-[4rem] w-full bg-[#232347] ">
+      <div className="h-[4rem] w-full bg-[#232347] font-poppins">
         <div className="max-w-5xl mx-auto flex flex-row items-center justify-between h-full">
           <h2>© 2021-2023 SnipShop.com</h2>
           <div className="flex flex-row gap-5">
