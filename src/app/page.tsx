@@ -3,6 +3,7 @@ import {
   Brands,
   Comments,
   FeaturedProducts,
+  HeroSection,
   ShopByCategory,
   SocialMediaComponent,
   TrendingProducts,
@@ -22,6 +23,7 @@ const Home = async () => {
   const data = await getData();
   return (
     <main className="">
+      <HeroSection />
       <TrendingProducts />
       <ShopByCategory products={data.products} />
       <FeaturedProducts />

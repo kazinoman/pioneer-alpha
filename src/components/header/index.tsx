@@ -7,11 +7,14 @@ import { BiShoppingBag } from "react-icons/bi";
 const Header = () => {
   return (
     <div className="h-[78px]  bg-[#1E66FF] text-white">
-      <div className="h-full max-w-5xl mx-auto flex flex-row items-center justify-between ">
+      <div className="h-full max-w-7xl mx-auto flex flex-row items-center justify-between ">
         <Image src="/Logo.svg" alt="asdf" width={100} height={26} />
         <div className="w-[60%]">
           <div className="rounded-full bg-white flex flex-row items-center justify-between">
-            <input className="ml-5 w-[80%] focus:outline-none" placeholder="Search SnipShop.com" />
+            <input
+              className="ml-5 w-[80%] focus:outline-none text-black"
+              placeholder="Search SnipShop.com"
+            />
             <button className="rounded-full w-20 h-[28px] bg-[#4DC3F7] flex flex-row items-center justify-center">
               <AiOutlineSearch />
             </button>

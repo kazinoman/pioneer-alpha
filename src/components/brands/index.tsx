@@ -1,4 +1,5 @@
 import React from "react";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 const Brands = () => {
   const Brands = [
@@ -31,7 +32,9 @@ const Brands = () => {
           Life is hard enough already. Let us <br />
           make it a little easier.
         </h1>
-        <h1>See All</h1>
+        <button className="flex flex-row items-center">
+          See All <IoIosArrowRoundForward className="h-8 w-8" />
+        </button>
       </div>
     </div>
   );

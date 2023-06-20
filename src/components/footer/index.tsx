@@ -10,7 +10,7 @@ const Footer = () => {
   ];
   return (
     <div className=" text-white ">
-      <div className="h-[20rem] bg-[#0E4B80] text-white p-10 mt-20 bg-[url('/footer/Vector.svg')]">
+      <div className="h-[20rem] bg-[#0E4B80] text-white p-10 mt-20 bg-[url('/footer/Vector.svg')] bg-center bg-no-repeat">
         <div className="max-w-5xl mx-auto flex flex-row gap-10">
           <div className="w-[25%]  flex flex-col gap-5">
             <h1 className="font-bold text-lg">Shop</h1>

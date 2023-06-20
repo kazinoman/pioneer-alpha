@@ -1,4 +1,5 @@
 import React from "react";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 const SocialMediaComponent = () => {
   const Items = [
@@ -14,7 +15,9 @@ const SocialMediaComponent = () => {
           Life is hard enough already. Let us <br />
           make it a little easier.
         </h1>
-        <h1>See All</h1>
+        <button className="flex flex-row items-center">
+          See All <IoIosArrowRoundForward className="h-8 w-8" />
+        </button>
       </div>
       <div className="w-[30%] h-[500px] bg-[url('/socialMedia/Vector1.svg')] bg-no-repeat flex flex-row flex-wrap items-center justify-center relative">
         <div className="bg-[#FFB082] w-[300px] h-[300px] blur-none opacity-40 left-28 rounded-3xl absolute" />
@@ -23,10 +26,10 @@ const SocialMediaComponent = () => {
           {Items.map((data) => {
             return (
               <div key={data.image} className="rounded-lg relative border-0">
-                <img src={data.image} className="h-[6rem] w-[6rem] relative" />
-                <div className="flex flex-col items-start justify-between gap-10 left-2 top-2 w-full absolute">
+                <img src={data.image} className="h-[7rem] w-[6rem] relative" />
+                <div className="flex flex-col items-start justify-between gap-14 left-2 top-2 w-full absolute">
                   <img src={data.logo} className=" left-0 top-0" />
-                  <h1 className="">{data.price}</h1>
+                  <h1 className="font-medium">${data.price}</h1>
                 </div>
               </div>
             );

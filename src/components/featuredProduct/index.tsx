@@ -1,5 +1,5 @@
 import React from "react";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowBack, IoIosArrowForward, IoIosArrowRoundForward } from "react-icons/io";
 
 const FeaturedProducts = () => {
   const Products = [
@@ -35,7 +35,9 @@ const FeaturedProducts = () => {
               Featured Product For <br /> Pre-Order
             </h1>
           </div>
-          <div className="absolute right-0 flex flex-row text-sm font-normal">Discover Our Products</div>
+          <div className="absolute right-0 flex flex-row items-center text-sm font-normal">
+            Discover Our Products <IoIosArrowRoundForward className="h-8 w-8" />
+          </div>
         </div>
       </div>
       <div className="flex flex-row px-10 mt-40 gap-10 items-center justify-around rounded-lg ">
@@ -60,7 +62,9 @@ const FeaturedProducts = () => {
                   <h1 className="font-bold text-md text-[#0E4B80]">${data.price} USD</h1>
                 </div>
               </div>
-              <button className="uppercase px-8 py-2 bg-[#001439] text-white rounded-3xl">order now</button>
+              <button className="uppercase px-8 py-2 bg-[#001439] text-white rounded-3xl">
+                order now
+              </button>
             </div>
           );
         })}
