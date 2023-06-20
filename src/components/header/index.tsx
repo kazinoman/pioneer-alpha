@@ -1,8 +1,10 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { AiOutlineMenu, AiOutlineHeart, AiOutlineSearch } from "react-icons/ai";
 import { IoPersonOutline } from "react-icons/io5";
 import { BiShoppingBag } from "react-icons/bi";
+import { Badge } from "@mui/material";
 
 const Header = () => {
   return (
@@ -15,22 +17,24 @@ const Header = () => {
               className="ml-5 w-[80%] focus:outline-none text-black"
               placeholder="Search SnipShop.com"
             />
-            <button className="rounded-full w-20 h-[28px] bg-[#4DC3F7] flex flex-row items-center justify-center">
-              <AiOutlineSearch />
+            <button className="rounded-full w-16 h-[28px] bg-[#4DC3F7] flex flex-row items-center justify-center">
+              <AiOutlineSearch className="w-6 h-6" />
             </button>
           </div>
         </div>
-        <div className="flex flex-row items-center gap-4">
-          <div className="flex flex-row items-center">
+        <div className="flex flex-row items-center gap-5">
+          <div className="flex flex-row items-center gap-2">
             <IoPersonOutline />
-            <h1>Account</h1>
+            <h1 className="font-normal text-sm">Account</h1>
           </div>
-          <div className="flex flex-row items-center">
+          <div className="flex flex-row items-center gap-2">
             <AiOutlineHeart />
-            <h1>My Items</h1>
+            <h1 className="font-normal text-sm">My Items</h1>
           </div>
           <div>
-            <BiShoppingBag />
+            <Badge badgeContent={4} color="warning">
+              <BiShoppingBag />
+            </Badge>
           </div>
           <div>
             <AiOutlineMenu />

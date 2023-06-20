@@ -3,9 +3,10 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const HeroSection = () => {
   return (
-    <div className="h-[100vh] bg-[url('/hero/background.png')]  bg-cover bg-center bg-no-repeat relative">
+    <div className="h-[100vh] bg-[url('/hero/background.png'),url('/hero/base.svg')] opacity-90 bg-cover bg-center bg-no-repeat relative">
       {/* heading */}
-      <div className=" max-w-7xl mx-auto flex flex-row items-center justify-between gap-5 pt-2">
+
+      <div className=" max-w-7xl mx-auto flex flex-row items-center justify-between gap-5 pt-2 ">
         <h1 className="text-[#5F5F5F] text-sm font-light">Jewelry & Accessories</h1>
         <h1 className="text-[#5F5F5F] text-sm font-light border-b-2 border-black ">
           Clothing & Shoes
@@ -19,11 +20,13 @@ const HeroSection = () => {
       </div>
       <div className="max-w-7xl mx-auto flex flex-row items-center justify-between">
         <div className="flex flex-col gap-9 mt-16">
-          <h1 className="font-normal text-sm"> 100% QUALITY, 100% SATISFACTION </h1>
-          <h1 className="font-extrabold text-7xl leading-[5rem]">
+          <h1 className="font-normal text-sm font-['Spectral']">
+            100% QUALITY, 100% SATISFACTION{" "}
+          </h1>
+          <h1 className="font-extrabold text-7xl leading-[5rem] spectral">
             Where the world <br /> comes to shop.
           </h1>
-          <h1 className="font-normal text-2xl text-[#000002]">
+          <h1 className="font-normal text-2xl text-[#000002] font-['Poppins']">
             Life is hard enough already. Let us make it a little <br /> easier, Vision of Snipshop
             for a better outlook.
           </h1>

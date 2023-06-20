@@ -113,7 +113,7 @@ const TrendingProducts = () => {
   };
 
   return (
-    <div>
+    <div className="mt-20">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-3xl text-center font-semibold">Shop out trending products</h1>
         <h1 className="text-md text-center mt-5">
@@ -127,18 +127,46 @@ const TrendingProducts = () => {
             <Heading text="Food & Drinks" />
           </div>
           <div className="absolute right-0 flex flex-row">
-            <button className={`p-1 rounded-2xl border-solid border-black border-2 mr-3 ${buttonSelect === "prev" ? `bg-black ` : ``}`} onClick={buttonPressPrev}>
-              <IoIosArrowBack className={` ${buttonSelect === "prev" ? `text-white border-solid border-black border-2` : null}`} />
+            <button
+              className={`p-1 rounded-2xl border-solid border-black border-2 mr-3 ${
+                buttonSelect === "prev" ? `bg-black ` : ``
+              }`}
+              onClick={buttonPressPrev}
+            >
+              <IoIosArrowBack
+                className={` ${
+                  buttonSelect === "prev" ? `text-white border-solid border-black border-2` : null
+                }`}
+              />
             </button>
-            <button className={`p-1 rounded-2xl border-solid border-black border-2 ${buttonSelect === "next" ? `bg-black ` : ``}`} onClick={buttonPressNext}>
-              <IoIosArrowForward className={`${buttonSelect === "next" ? `text-white border-solid border-black border-2` : null}`} />
+            <button
+              className={`p-1 rounded-2xl border-solid border-black border-2 ${
+                buttonSelect === "next" ? `bg-black ` : ``
+              }`}
+              onClick={buttonPressNext}
+            >
+              <IoIosArrowForward
+                className={`${
+                  buttonSelect === "next" ? `text-white border-solid border-black border-2` : null
+                }`}
+              />
             </button>
           </div>
         </div>
       </div>
       <div className="flex scroll-smooth overflow-hidden gap-5 mt-5 p-0 w-[100%] product-container">
         {category.map((data, key: number) => {
-          return <ProductCategory image={data.image} name={data.name} price={data.price} status={data.status} key={key} background={data.background} shadow={data.shadow} />;
+          return (
+            <ProductCategory
+              image={data.image}
+              name={data.name}
+              price={data.price}
+              status={data.status}
+              key={key}
+              background={data.background}
+              shadow={data.shadow}
+            />
+          );
         })}
       </div>
     </div>

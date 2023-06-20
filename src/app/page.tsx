@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {
   Brands,
   Comments,
@@ -8,7 +7,11 @@ import {
   SocialMediaComponent,
   TrendingProducts,
 } from "@/components";
-import { getProducts } from "@/services/products.service";
+
+export const metadata = {
+  title: "Home page",
+  description: "This is home page.",
+};
 
 async function getData() {
   const res = await fetch("https://dummyjson.com/products");
@@ -22,15 +25,17 @@ async function getData() {
 const Home = async () => {
   const data = await getData();
   return (
-    <main className="">
-      <HeroSection />
-      <TrendingProducts />
-      <ShopByCategory products={data.products} />
-      <FeaturedProducts />
-      <Brands />
-      <SocialMediaComponent />
-      <Comments />
-    </main>
+    <div>
+      <main className="">
+        <HeroSection />
+        <TrendingProducts />
+        <ShopByCategory products={data.products} />
+        <FeaturedProducts />
+        <Brands />
+        <SocialMediaComponent />
+        <Comments />
+      </main>
+    </div>
   );
 };
 
